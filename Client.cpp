@@ -11,7 +11,9 @@ int main(void)
     {
     	//Initialize a connection
         std::cout << "I am a client!" << std::endl;
-        Socket s = Socket("129.100.227.119", 2000);
+        // Socket s = Socket("129.100.227.119", 2000); //ken's server
+        Socket s = Socket("127.0.0.1", 2000); // my server
+        
         s.Open();
 
         std::string message = "OK, Ken";

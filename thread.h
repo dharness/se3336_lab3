@@ -27,10 +27,12 @@ private:
     long NowInUSec(void) const;
 public:
     Thread(bool startOnCreation = false);
-    virtual ~Thread();
+    // virtual ~Thread();
+    ~Thread();
 
     // Override this function in your threads
     virtual long ThreadMain(void) = 0;
+    // long ThreadMain(void);
 
     // Use these functions to control the thread from outside
     bool Start(void); // Start the thread
