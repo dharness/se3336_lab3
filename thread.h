@@ -27,8 +27,8 @@ private:
     long NowInUSec(void) const;
 public:
     Thread(bool startOnCreation = false);
-    // virtual ~Thread();
-    ~Thread();
+    virtual ~Thread();
+    // ~Thread();
 
     // Override this function in your threads
     virtual long ThreadMain(void) = 0;
